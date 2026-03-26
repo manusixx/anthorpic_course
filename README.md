@@ -15,7 +15,7 @@ Repositorio de aprendizaje que documenta los ejercicios del curso oficial de Ant
 ```
 anthorpic_course/
 ├── 001_requests/          # Primeras llamadas a la API
-├── 002_system_promt/      # System prompts y control de comportamiento
+├── 002_system_prompt/      # System prompts y control de comportamiento
 ├── 003_Temperature/       # Control de temperatura y aleatoriedad
 ├── 004_streaming/         # Respuestas en streaming
 ├── .gitignore             # Archivos excluidos del repositorio
