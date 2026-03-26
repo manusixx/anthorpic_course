@@ -46,6 +46,11 @@ Implementación de respuestas en tiempo real usando streaming, mejorando la expe
 
 **Conceptos clave:** `stream=True`, manejo de eventos, respuestas incrementales.
 
+### 004 — Prompt_Eval
+Implementación de evaluación de prompts para mejorar la calidad de una respuesta.
+
+**Conceptos clave:** definición del prompt, definición del conjunto de datos de prueba, respuesta con claude, evaluación del grader.
+
 ---
 
 ## ⚙️ Configuración del entorno
