@@ -1,11 +1,17 @@
 [
   {
-    "task": "Write a Python function that takes an AWS ARN string and extracts the region from it. For example, given 'arn:aws:ec2:us-west-2:123456789012:instance/i-1234567890abcdef0', return 'us-west-2'."
+    "task": "Create an IAM policy that allows read-only access to a specific S3 bucket named 'company-logs-2024' and all objects within it",
+    "format": "JSON",
+    "solution_criteria": "JSON policy document with Version '2012-10-17', Effect 'Allow', Action containing s3:GetObject and s3:ListBucket, and Resource ARNs for the bucket and its objects (arn:aws:s3:::company-logs-2024 and arn:aws:s3:::company-logs-2024/*)"
   },
   {
-    "task": "Create a JSON object for an AWS S3 bucket policy that allows public read access to all objects in a bucket named 'my-public-assets', but only for objects with the prefix 'images/'."
+    "task": "Write a Python function that takes a list of EC2 instance dictionaries (with 'InstanceId' and 'State' keys) and returns only the instance IDs of instances in 'running' state",
+    "format": "Python",
+    "solution_criteria": "Function accepts a list of dictionaries, filters for instances where State equals 'running', returns a list of InstanceId strings. Example: input [{'InstanceId': 'i-123', 'State': 'running'}, {'InstanceId': 'i-456', 'State': 'stopped'}] should return ['i-123']"
   },
   {
-    "task": "Write a regex pattern that validates AWS Access Key IDs, which start with 'AKIA' or 'ASIA' followed by exactly 16 alphanumeric characters."
+    "task": "Create a regex pattern that validates AWS ARN (Amazon Resource Name) format for S3 buckets",
+    "format": "Regex",
+    "solution_criteria": "Pattern matches strings starting with 'arn:aws:s3:::' followed by a valid bucket name (3-63 characters, lowercase letters, numbers, hyphens, and periods). Should match 'arn:aws:s3:::my-bucket' and 'arn:aws:s3:::my.bucket-123' but not 'arn:aws:s3:::AB' or 'arn:aws:ec2:::bucket'"
   }
 ]
