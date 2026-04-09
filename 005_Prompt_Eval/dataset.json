@@ -1,11 +1,11 @@
 [
   {
-    "task": "Write a Python function that takes an AWS ARN string and extracts the service name from it. For example, given 'arn:aws:s3:::my-bucket' it should return 's3'."
+    "task": "Write a Python function that takes an AWS ARN string and extracts the region from it. For example, given 'arn:aws:ec2:us-west-2:123456789012:instance/i-1234567890abcdef0', return 'us-west-2'."
   },
   {
-    "task": "Create a JSON object representing an AWS S3 bucket policy that allows public read access to all objects in the bucket 'my-public-bucket'."
+    "task": "Create a JSON object for an AWS S3 bucket policy that allows public read access to all objects in a bucket named 'my-public-assets', but only for objects with the prefix 'images/'."
   },
   {
-    "task": "Write a regex pattern that validates AWS IAM role names according to AWS naming rules: 1-64 characters, alphanumeric plus +=,.@-_ characters."
+    "task": "Write a regex pattern that validates AWS Access Key IDs, which start with 'AKIA' or 'ASIA' followed by exactly 16 alphanumeric characters."
   }
 ]
