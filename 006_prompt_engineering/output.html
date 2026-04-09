@@ -1,0 +1,244 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .header {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .summary-stats {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .stat-box {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background-color: #4a4a4a;
+                color: white;
+                text-align: left;
+                padding: 12px;
+            }
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .output-cell {
+                white-space: pre-wrap;
+            }
+            .score {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            .score-high {
+                background-color: #c8e6c9;
+                color: #2e7d32;
+            }
+            .score-medium {
+                background-color: #fff9c4;
+                color: #f57f17;
+            }
+            .score-low {
+                background-color: #ffcdd2;
+                color: #c62828;
+            }
+            .output {
+                overflow: auto;
+                white-space: pre-wrap;
+            }
+
+            .output pre {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 0;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                overflow-x: auto;
+                white-space: pre-wrap; 
+                word-wrap: break-word; 
+            }
+
+            td {
+                width: 20%;
+            }
+            .score-col {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <div>Total Test Cases</div>
+                    <div class="stat-value">2</div>
+                </div>
+                <div class="stat-box">
+                    <div>Average Score</div>
+                    <div class="stat-value">2.5 / 10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Pass Rate (≥7)</div>
+                    <div class="stat-value">0.0%</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Prompt Inputs</th>
+                    <th>Solution Criteria</th>
+                    <th>Output</th>
+                    <th>Score</th>
+                    <th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>Testing with a strength-training athlete (weightlifter) emphasizing protein intake and muscle recovery, with common food allergies (peanuts and shellfish) that must be avoided</td>
+                <td class="prompt-inputs"><strong>height:</strong> 180<br><strong>weight:</strong> 85<br><strong>goal:</strong> muscle gain<br><strong>restrictions:</strong> peanut allergy, shellfish allergy</td>
+                <td class="criteria">• Meal plan covers a full 24-hour period with at least 3 meals<br>• Total daily protein intake supports muscle recovery for strength training (minimum 1.6g per kg body weight)<br>• All meals avoid peanuts and shellfish<br>• Plan is compact and concise (under 400 words)</td>
+                <td class="output"><pre># Nutrition Plan for Muscle Gain
+
+## Daily Caloric Intake
+- **Target**: ~2,800-3,200 calories/day (surplus for muscle growth)
+- **Protein**: 170-185g daily (2g per kg bodyweight)
+- **Carbs**: 350-400g daily (post-workout priority)
+- **Fats**: 80-90g daily (healthy sources)
+
+## Protein Sources ✓
+- **Lean meats**: chicken breast, turkey, lean beef
+- **Fish**: salmon, tuna, cod, mackerel (avoid shellfish)
+- **Eggs**: whole eggs and egg whites
+- **Dairy**: Greek yogurt, cottage cheese, milk
+- **Plant-based**: lentils, chickpeas, tofu, tempeh
+- **Protein powder**: whey, plant-based (avoid peanut-based)
+
+## Carbs (Pre/Post-Workout)
+- Oats, rice, pasta, quinoa
+- Sweet potatoes, regular potatoes
+- Whole grain bread
+- Fruits: bananas, berries, apples
+
+## Healthy Fats
+- Olive oil, avocado oil
+- Nuts: almonds, walnuts, cashews (NO peanuts)
+- Seeds: chia, flax, sunflower
+- Fatty fish: salmon, mackerel
+
+## Sample Daily Meal Structure
+1. **Breakfast**: Oats + eggs + banana
+2. **Snack**: Greek yogurt + berries
+3. **Lunch**: Chicken + rice + vegetables
+4. **Pre-workout**: Banana + almonds
+5. **Post-workout**: Protein shake + carbs
+6. **Dinner**: Salmon + sweet potato + broccoli
+
+**Key**: Consistent training + adequate sleep + proper nutrition = muscle growth! 💪</pre></td>
+                <td class="score-col"><span class="score score-low">3</span></td>
+                <td class="reasoning">The solution fails all three mandatory requirements. While it demonstrates solid nutritional knowledge (correct protein calculations, proper allergy avoidance, good structure), it provides only a framework and guidelines rather than an actual meal plan. The 'Sample Daily Meal Structure' lists 6 items but lacks the specific portions, quantities, and timing needed to constitute a real meal plan. There is no daily caloric total calculated for the proposed meals, and no macronutrient breakdown showing how the sample meals meet the stated targets. The task explicitly requires 'meals with exact foods, portions and timing' - this solution provides neither portions nor specific timing beyond vague categories like 'pre-workout' and 'post-workout'.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a high-endurance athlete (marathon runner) requiring significant daily caloric intake and carbohydrate-loading focus, with specific dietary restrictions (vegetarian)</td>
+                <td class="prompt-inputs"><strong>height:</strong> 178<br><strong>weight:</strong> 68<br><strong>goal:</strong> marathon preparation with carbohydrate loading<br><strong>restrictions:</strong> vegetarian</td>
+                <td class="criteria">• Meal plan covers all three meals plus snacks for a single day<br>• Total daily calories support high-endurance training (approximately 3000-3500 calories)<br>• Carbohydrates comprise 60-65% of total calories with emphasis on complex carbs<br>• All meals and snacks are vegetarian-compliant with no animal meat products</td>
+                <td class="output"><pre># Marathon Preparation Nutrition Plan
+
+## Daily Calorie Target
+**~2,800-3,200 calories/day** (depending on training intensity)
+
+---
+
+## Macronutrient Breakdown (Carb-Loading Focus)
+
+| Macronutrient | Target | Examples |
+|---|---|---|
+| **Carbs** | 55-65% | Pasta, rice, oats, bread, potatoes |
+| **Protein** | 15-20% | Legumes, tofu, tempeh, Greek yogurt, nuts |
+| **Fat** | 20-25% | Olive oil, avocado, seeds, nuts |
+
+---
+
+## Key Foods to Prioritize
+
+### 🌾 Carbohydrates (Base of Diet)
+- Whole grain pasta & bread
+- Brown rice, quinoa, oats
+- Sweet potatoes, regular potatoes
+- Bananas, dates, dried fruit
+
+### 🥛 Protein Sources (Vegetarian)
+- Lentils, chickpeas, black beans
+- Tofu & tempeh
+- Greek yogurt, cottage cheese
+- Nuts & nut butter
+- Eggs (if acceptable)
+
+### 🥗 Recovery Boosters
+- Leafy greens (iron)
+- Berries (antioxidants)
+- Whole grains (sustained energy)
+
+---
+
+## Pre-Race Strategy
+- 3 days before: Increase carbs to 70% of calories
+- Race morning: Light carbs 2-3 hours prior
+- During race: Energy gels/sports drinks (if >90 min)
+
+**Consider consulting a sports dietitian for personalized timing!**</pre></td>
+                <td class="score-col"><span class="score score-low">2</span></td>
+                <td class="reasoning">The solution fails to meet all three mandatory requirements. While it provides general macronutrient targets and food lists, it does not include: (1) a structured daily meal plan with specific meals, portions, and timing, (2) a daily caloric total (only a range is given), or (3) a complete macronutrient breakdown for actual foods consumed. The task explicitly requests a '1 day meal plan' with 'exact foods, portions and timing,' which this solution does not deliver. Instead, it provides educational guidance about nutrition principles. The calorie range is also insufficient for the stated criterion of 3,000-3,500 calories for high-endurance training.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    
