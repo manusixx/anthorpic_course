@@ -1,44 +1,44 @@
 [
   {
-    "output": "# Nutrition Plan for Muscle Gain\n\n## Daily Caloric Intake\n- **Target**: ~2,800-3,200 calories/day (surplus for muscle growth)\n- **Protein**: 170-185g daily (2g per kg bodyweight)\n- **Carbs**: 350-400g daily (post-workout priority)\n- **Fats**: 80-90g daily (healthy sources)\n\n## Protein Sources \u2713\n- **Lean meats**: chicken breast, turkey, lean beef\n- **Fish**: salmon, tuna, cod, mackerel (avoid shellfish)\n- **Eggs**: whole eggs and egg whites\n- **Dairy**: Greek yogurt, cottage cheese, milk\n- **Plant-based**: lentils, chickpeas, tofu, tempeh\n- **Protein powder**: whey, plant-based (avoid peanut-based)\n\n## Carbs (Pre/Post-Workout)\n- Oats, rice, pasta, quinoa\n- Sweet potatoes, regular potatoes\n- Whole grain bread\n- Fruits: bananas, berries, apples\n\n## Healthy Fats\n- Olive oil, avocado oil\n- Nuts: almonds, walnuts, cashews (NO peanuts)\n- Seeds: chia, flax, sunflower\n- Fatty fish: salmon, mackerel\n\n## Sample Daily Meal Structure\n1. **Breakfast**: Oats + eggs + banana\n2. **Snack**: Greek yogurt + berries\n3. **Lunch**: Chicken + rice + vegetables\n4. **Pre-workout**: Banana + almonds\n5. **Post-workout**: Protein shake + carbs\n6. **Dinner**: Salmon + sweet potato + broccoli\n\n**Key**: Consistent training + adequate sleep + proper nutrition = muscle growth! \ud83d\udcaa",
+    "output": "# One-Day Muscle Gain Meal Plan\n## For 180cm, 85kg Athlete\n\n---\n\n## Daily Nutritional Targets\n- **Calories:** 3,200 kcal\n- **Protein:** 170g (2.0g per kg body weight)\n- **Carbohydrates:** 400g\n- **Fat:** 85g\n\n---\n\n## BREAKFAST (7:00 AM)\n*650 kcal | 25g protein | 80g carbs | 18g fat*\n\n- Oatmeal (80g dry) with water\n- Banana (150g)\n- Whole eggs (3) + egg whites (2)\n- Honey (15g)\n- Olive oil (5ml) for cooking\n\n---\n\n## MID-MORNING SNACK (10:00 AM)\n*450 kcal | 35g protein | 45g carbs | 8g fat*\n\n- Greek yogurt (250g, plain)\n- Granola (40g)\n- Berries (100g mixed)\n- Almonds (25g)\n\n---\n\n## LUNCH (1:00 PM)\n*850 kcal | 45g protein | 95g carbs | 20g fat*\n\n- Chicken breast (200g grilled)\n- White rice (200g cooked)\n- Broccoli (150g steamed)\n- Olive oil (10ml) drizzle\n- Salt & pepper to taste\n\n---\n\n## PRE-WORKOUT SNACK (3:30 PM)\n*350 kcal | 20g protein | 50g carbs | 5g fat*\n\n- Rice cakes (50g)\n- Peanut butter (25g)\n- Apple (180g)\n\n---\n\n## POST-WORKOUT (5:30 PM)\n*500 kcal | 30g protein | 65g carbs | 8g fat*\n\n- Whey protein shake (30g powder)\n- White bread (60g)\n- Honey (20g)\n- Banana (120g)\n- Milk (200ml, 2%)\n\n---\n\n## DINNER (7:30 PM)\n*400 kcal | 40g protein | 35g carbs | 12g fat*\n\n- Lean beef (180g)\n- Sweet potato (150g baked)\n- Green beans (120g)\n- Olive oil (8ml)\n\n---\n\n## EVENING SNACK (9:30 PM)\n*250 kcal | 25g protein | 15g carbs | 4g fat*\n\n- Cottage cheese (200g, low-fat)\n- Almonds (20g)\n\n---\n\n## Daily Totals\n\u2713 **3,250 kcal** | **220g protein** | **385g carbs** | **75g fat**\n\n---\n\n## Notes for Success\n- Adjust portions \u00b1100-150 kcal based on weekly weight gain (aim for 0.5-1kg/week)\n- Drink 3-4L water daily\n- Time majority of carbs around workouts\n- Ensure 7-9 hours sleep for recovery",
     "test_case": {
       "prompt_inputs": {
         "height": "180",
         "weight": "85",
         "goal": "muscle gain",
-        "restrictions": "peanut allergy, shellfish allergy"
+        "restrictions": "none"
       },
       "solution_criteria": [
-        "Meal plan covers a full 24-hour period with at least 3 meals",
-        "Total daily protein intake supports muscle recovery for strength training (minimum 1.6g per kg body weight)",
-        "All meals avoid peanuts and shellfish",
-        "Plan is compact and concise (under 400 words)"
+        "Meal plan covers full 24-hour period with 4-5 meals",
+        "Includes pre-workout and post-workout meals with appropriate timing",
+        "Provides high protein intake (minimum 1.6g per kg body weight)",
+        "Compact format with clear meal descriptions and macronutrient breakdown"
       ],
       "task_description": "write a compact, concise 1 day meal plan for a single athelete",
-      "scenario": "Testing with a strength-training athlete (weightlifter) emphasizing protein intake and muscle recovery, with common food allergies (peanuts and shellfish) that must be avoided"
+      "scenario": "Testing with a strength-training athlete requiring high protein intake and specific macronutrient ratios, including pre/post-workout meal timing considerations"
     },
-    "score": 3,
-    "reasoning": "The solution fails all three mandatory requirements. While it demonstrates solid nutritional knowledge (correct protein calculations, proper allergy avoidance, good structure), it provides only a framework and guidelines rather than an actual meal plan. The 'Sample Daily Meal Structure' lists 6 items but lacks the specific portions, quantities, and timing needed to constitute a real meal plan. There is no daily caloric total calculated for the proposed meals, and no macronutrient breakdown showing how the sample meals meet the stated targets. The task explicitly requires 'meals with exact foods, portions and timing' - this solution provides neither portions nor specific timing beyond vague categories like 'pre-workout' and 'post-workout'."
+    "score": 9,
+    "reasoning": "The solution comprehensively satisfies all mandatory requirements with exact foods, portions, timing, daily caloric total, and macronutrient breakdowns clearly presented. It includes 7 meals spanning a full 24-hour period with strategic pre-workout and post-workout nutrition. The protein intake significantly exceeds the 1.6g/kg minimum requirement (2.59g/kg), making it appropriate for muscle gain goals. The format is compact and well-organized. Minor inconsistencies exist between stated targets and delivered macros (protein 220g vs 170g target), but these do not violate mandatory requirements and actually favor the athlete's muscle-building goal. All secondary criteria are met effectively."
   },
   {
-    "output": "# Marathon Preparation Nutrition Plan\n\n## Daily Calorie Target\n**~2,800-3,200 calories/day** (depending on training intensity)\n\n---\n\n## Macronutrient Breakdown (Carb-Loading Focus)\n\n| Macronutrient | Target | Examples |\n|---|---|---|\n| **Carbs** | 55-65% | Pasta, rice, oats, bread, potatoes |\n| **Protein** | 15-20% | Legumes, tofu, tempeh, Greek yogurt, nuts |\n| **Fat** | 20-25% | Olive oil, avocado, seeds, nuts |\n\n---\n\n## Key Foods to Prioritize\n\n### \ud83c\udf3e Carbohydrates (Base of Diet)\n- Whole grain pasta & bread\n- Brown rice, quinoa, oats\n- Sweet potatoes, regular potatoes\n- Bananas, dates, dried fruit\n\n### \ud83e\udd5b Protein Sources (Vegetarian)\n- Lentils, chickpeas, black beans\n- Tofu & tempeh\n- Greek yogurt, cottage cheese\n- Nuts & nut butter\n- Eggs (if acceptable)\n\n### \ud83e\udd57 Recovery Boosters\n- Leafy greens (iron)\n- Berries (antioxidants)\n- Whole grains (sustained energy)\n\n---\n\n## Pre-Race Strategy\n- 3 days before: Increase carbs to 70% of calories\n- Race morning: Light carbs 2-3 hours prior\n- During race: Energy gels/sports drinks (if >90 min)\n\n**Consider consulting a sports dietitian for personalized timing!**",
+    "output": "# Marathon Race Day Carb-Loading Meal Plan\n\n**Athlete Profile:** 180 cm, 70 kg | Race Day Preparation\n**Daily Target:** ~3,500 calories | 70% carbs, 15% protein, 15% fat\n\n---\n\n## DAILY MACROS BREAKDOWN\n- **Calories:** 3,500 kcal\n- **Carbohydrates:** 612g (70%)\n- **Protein:** 131g (15%)\n- **Fat:** 58g (15%)\n\n---\n\n## MEAL SCHEDULE\n\n### **BREAKFAST** | 7:00 AM\n*~850 calories | C:155g | P:28g | F:12g*\n\n- Oatmeal: 80g dry\n- Banana: 150g (1 large)\n- Honey: 40g (2 tbsp)\n- Low-fat yogurt: 150g\n- Almonds: 15g\n- Water or weak tea\n\n---\n\n### **MID-MORNING SNACK** | 10:00 AM\n*~400 calories | C:95g | P:10g | F:3g*\n\n- White bread: 100g (2-3 slices)\n- Jam: 50g (3 tbsp)\n- Apple: 200g (1 large)\n- Sports drink: 500ml\n\n---\n\n### **LUNCH** | 1:00 PM\n*~900 calories | C:168g | P:42g | F:16g*\n\n- White rice: 200g cooked\n- Grilled chicken breast: 150g\n- Olive oil: 10ml\n- Steamed carrots: 100g\n- White dinner roll: 80g\n- Orange juice: 250ml\n\n---\n\n### **AFTERNOON SNACK** | 4:00 PM\n*~500 calories | C:110g | P:15g | F:8g*\n\n- Bagel: 100g (plain)\n- Peanut butter: 25g\n- Honey: 30g\n- Banana: 120g\n- Sports drink: 500ml\n\n---\n\n### **DINNER** | 7:00 PM\n*~750 calories | C:140g | P:36g | F:14g*\n\n- White pasta: 180g cooked\n- Lean ground turkey: 120g\n- Tomato sauce: 150g\n- Olive oil: 8ml\n- Side salad (light): 100g\n- White bread: 60g\n- Apple juice: 200ml\n\n---\n\n### **EVENING SNACK** | 9:30 PM\n*~100 calories | C:22g | P:0g | F:5g*\n\n- Rice cakes: 25g\n- Honey: 20g\n- Herbal tea\n\n---\n\n## HYDRATION STRATEGY\n- **Total fluids:** 3-4 liters\n- Water throughout day\n- 1L sports drink (6% carbs)\n- 200ml orange juice\n- 200ml apple juice\n- Electrolyte beverage: 500ml\n\n---\n\n## PRE-RACE TIPS\n\u2713 Sleep 8+ hours  \n\u2713 Avoid high fiber (reduces GI distress)  \n\u2713 Minimize fat/protein at dinner  \n\u2713 Stay hydrated but not bloated  \n\u2713 Eat familiar foods only  \n\u2713 Finish last meal 3-4 hours before race  \n\n**Race morning:** 300-400 cal easily-digested carbs 2-3 hours before start",
     "test_case": {
       "prompt_inputs": {
-        "height": "178",
-        "weight": "68",
-        "goal": "marathon preparation with carbohydrate loading",
-        "restrictions": "vegetarian"
+        "height": "180 cm",
+        "weight": "70 kg",
+        "goal": "carbohydrate loading for marathon race day preparation",
+        "restrictions": "none"
       },
       "solution_criteria": [
-        "Meal plan covers all three meals plus snacks for a single day",
-        "Total daily calories support high-endurance training (approximately 3000-3500 calories)",
-        "Carbohydrates comprise 60-65% of total calories with emphasis on complex carbs",
-        "All meals and snacks are vegetarian-compliant with no animal meat products"
+        "Meal plan includes 4-5 meals/snacks with emphasis on high-carbohydrate foods (55-65% of calories)",
+        "Includes specific hydration guidelines with fluid amounts throughout the day",
+        "Plan is compact and concise (fits on single page or brief format)",
+        "Meals are practical and realistic for an endurance athlete preparing for marathon"
       ],
       "task_description": "write a compact, concise 1 day meal plan for a single athelete",
-      "scenario": "Testing with a high-endurance athlete (marathon runner) requiring significant daily caloric intake and carbohydrate-loading focus, with specific dietary restrictions (vegetarian)"
+      "scenario": "Testing with an endurance athlete (marathon runner) needing carbohydrate loading strategies and hydration guidelines throughout the day"
     },
-    "score": 2,
-    "reasoning": "The solution fails to meet all three mandatory requirements. While it provides general macronutrient targets and food lists, it does not include: (1) a structured daily meal plan with specific meals, portions, and timing, (2) a daily caloric total (only a range is given), or (3) a complete macronutrient breakdown for actual foods consumed. The task explicitly requests a '1 day meal plan' with 'exact foods, portions and timing,' which this solution does not deliver. Instead, it provides educational guidance about nutrition principles. The calorie range is also insufficient for the stated criterion of 3,000-3,500 calories for high-endurance training."
+    "score": 9,
+    "reasoning": "The solution comprehensively meets all three mandatory requirements with clear daily totals, detailed macronutrient breakdowns, and specific meals with portions and timing. It exceeds secondary criteria expectations with detailed hydration guidelines (3-4L with specific beverages) and practical pre-race advice. The only notable issue is the 70% carbohydrate target, which exceeds the 55-65% secondary criteria range, though this is actually scientifically appropriate for marathon race-day carb-loading. The plan is practical, realistic, and well-organized. The format is concise and professional. Minor deductions apply for having 6 meals instead of 4-5 and not explicitly explaining the choice of refined carbohydrates."
   }
 ]
