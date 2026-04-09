@@ -7,28 +7,27 @@
       "restrictions": "none"
     },
     "solution_criteria": [
-      "Meal plan covers full 24-hour period with 4-5 meals",
-      "Includes pre-workout and post-workout meals with appropriate timing",
-      "Provides high protein intake (minimum 1.6g per kg body weight)",
-      "Compact format with clear meal descriptions and macronutrient breakdown"
+      "Meal plan totals 2500+ calories with minimum 180g protein distributed across 4-5 meals",
+      "Includes pre- and post-workout nutrition timing for strength training",
+      "Plan is presented in compact, easy-to-read format suitable for one day"
     ],
     "task_description": "write a compact, concise 1 day meal plan for a single athelete",
-    "scenario": "Testing with a strength-training athlete requiring high protein intake and specific macronutrient ratios, including pre/post-workout meal timing considerations"
+    "scenario": "Testing with a strength-focused athlete (weightlifter) requiring 2500+ calories with emphasis on protein distribution across meals and recovery timing"
   },
   {
     "prompt_inputs": {
-      "height": "180 cm",
-      "weight": "70 kg",
-      "goal": "carbohydrate loading for marathon race day preparation",
+      "height": "180",
+      "weight": "72",
+      "goal": "marathon endurance performance with carbohydrate loading",
       "restrictions": "none"
     },
     "solution_criteria": [
-      "Meal plan includes 4-5 meals/snacks with emphasis on high-carbohydrate foods (55-65% of calories)",
-      "Includes specific hydration guidelines with fluid amounts throughout the day",
-      "Plan is compact and concise (fits on single page or brief format)",
-      "Meals are practical and realistic for an endurance athlete preparing for marathon"
+      "Meal plan totals 3000+ calories with carbohydrates comprising 55-65% of total calories",
+      "Includes specific hydration strategy with fluid intake recommendations throughout the day",
+      "Contains exactly 4-5 meals/snacks structured for pre-run, during-run, and post-run nutrition",
+      "Plan is presented in compact, easy-to-scan format suitable for single-day reference"
     ],
     "task_description": "write a compact, concise 1 day meal plan for a single athelete",
-    "scenario": "Testing with an endurance athlete (marathon runner) needing carbohydrate loading strategies and hydration guidelines throughout the day"
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring 3000+ calories with emphasis on carbohydrate loading and hydration strategy"
   }
 ]
