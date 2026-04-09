@@ -14,12 +14,14 @@ Repositorio de aprendizaje que documenta los ejercicios del curso oficial de Ant
 
 ```
 anthorpic_course/
-├── 001_requests/          # Primeras llamadas a la API
-├── 002_system_prompt/      # System prompts y control de comportamiento
-├── 003_Temperature/       # Control de temperatura y aleatoriedad
-├── 004_streaming/         # Respuestas en streaming
-├── .gitignore             # Archivos excluidos del repositorio
-└── README.md              # Este archivo
+├── 001_requests/                 # Primeras llamadas a la API
+├── 002_system_prompt/            # System prompts y control de comportamiento
+├── 003_temperature/              # Control de temperatura y aleatoriedad
+├── 004_streaming/                # Respuestas en streaming
+├── 005_prompt_eval/              # Evaluación de prompts y grading
+├── 006_prompt_engineering/       # Ingeniería prompt
+├── .gitignore                    # Archivos excluidos del repositorio
+└── README.md                     # Este archivo
 ```
 
 ---
@@ -46,10 +48,15 @@ Implementación de respuestas en tiempo real usando streaming, mejorando la expe
 
 **Conceptos clave:** `stream=True`, manejo de eventos, respuestas incrementales.
 
-### 004 — Prompt_Eval
-Implementación de evaluación de prompts para mejorar la calidad de una respuesta.
+### 005 — Prompt Evaluation
+Evaluación sistemática de la calidad de prompts mediante datasets de prueba y técnicas de grading automatizado con el modelo.
 
-**Conceptos clave:** definición del prompt, definición del conjunto de datos de prueba, respuesta con claude, evaluación del grader.
+**Conceptos clave:** definición del prompt, dataset de evaluación, model-based grading, code-based grading, métricas de calidad.
+
+### 006 — Prompt Engineering
+To do
+
+**Conceptos clave:** To do.
 
 ---
 
